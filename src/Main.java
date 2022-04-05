@@ -3,7 +3,9 @@ public class Main {
     public static void main(String[] args) {
        // here we display the graph
         AdjacencyGraph adjDirectedG = electricityGrid();
-        adjDirectedG.PrintGraph();
+        //uncomment to see the graph
+       // adjDirectedG.PrintGraph();
+        adjDirectedG.PrintMST();
 
     }
 // here we add the cities and the paths to the graph
@@ -86,8 +88,9 @@ public class Main {
         newG.addEdge(Ringsted,Vordingborg,58);
         newG.addEdge(Ringsted,Roskilde,31);
         newG.addEdge(Ringsted,Sorø,15);
-        newG.addEdge(Slagelse,Sorø,1);
+        newG.addEdge(Slagelse,Sorø,14);
 
         return newG;
     }
+
 }
